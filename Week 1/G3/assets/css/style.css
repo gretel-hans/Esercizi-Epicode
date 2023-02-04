@@ -4,7 +4,7 @@ html body{
 }
 
 #mastro-container{
-    width:50vw;
+    width:50%;
     text-align: left;
     margin:0 auto;
 }
@@ -67,9 +67,12 @@ html body{
 
 #contenuto-paragrafo{
     border-left: 1.5px solid #ffd977;
-    margin-right: 10px;
 }
 
 span{
     color:orange;
+}
+
+a:link{
+    color:rgb(41, 122, 122);
 }
