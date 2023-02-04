@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html body{
     font-family:georgia,sans-serif;
     font-size:0.8rem;
@@ -76,3 +77,80 @@ span{
 a:link{
     color:rgb(41, 122, 122);
 }
+=======
+html body{
+    font-family:georgia,sans-serif;
+    font-size:0.8rem;
+}
+
+#mastro-container{
+    width:50vw;
+    text-align: left;
+    margin:0 auto;
+}
+
+#header{
+    text-align:center;
+}
+
+#logo{
+    width:10em;
+    margin:1em;
+}
+
+#navbar{
+    height:4vh;
+    border-top: 1px solid #ffd977 ;
+    background-color:#fefbf1;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+#navbar>p{
+    font-size:0.6em;
+}
+
+#container-1 {
+    width:30em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#container-1>h1{
+    text-align: center;
+}
+
+#container-2{
+    width:40em;
+    margin:0 auto;
+    text-align:left;
+
+}
+
+#container-2>p{
+    font-size:0.9em;
+}
+
+#filmato{
+    border-radius: 1em;
+}
+
+#container-filmato, #container-filmato>p {
+    margin:0 auto;
+    text-align:center;
+}
+
+#didascalia-video{
+    color:grey;
+}
+
+#contenuto-paragrafo{
+    border-left: 1.5px solid #ffd977;
+    margin-right: 10px;
+}
+
+span{
+    color:orange;
+}
+>>>>>>> baba2a70ecbaa6bc50218b3234aac8b8787668ae

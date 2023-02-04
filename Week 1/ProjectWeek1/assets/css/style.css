@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
 
 body{
@@ -156,3 +157,164 @@ footer a:visited{
 hr{
     width:40vw;
 }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+
+body{
+    margin:0 auto;
+    margin-right: 10px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65;
+    font-size: 1em;
+}
+
+#header{
+    height:19vh;
+    background-color: black;
+    margin:0 auto;
+}
+
+#logo{
+    width:30vw;
+    text-align: center;
+}
+
+#footer{
+    background-color:#25a2c3 ;
+}
+
+#web{
+    background-image: url("/assets/images/banner.jpg");
+    background-repeat: no-repeat;
+    height:23em;
+}
+
+h1{
+    font-size: xx-large;
+    width: 60vw;
+
+    margin: 0 auto;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    color:#25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    }
+
+    .contenitore{
+        width: 70vw;
+        margin: auto;
+    }
+
+#fake-btn{
+    display:block;
+    background-color:#f04c2f;
+    color: white;
+    width:120px;
+    height:46px;
+    margin:auto;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    padding-top: 10px;
+}
+
+#articolo-web{
+    padding-top: 1em;
+}
+
+.headings{
+    padding-top: 1em;
+    margin: 0 auto;
+}
+
+#computer{
+    border-radius: 50%;
+    width:70vw;
+}
+
+#articolo-aside{
+    background-color: #e22d0e;
+    color:white;
+}
+
+#epicode-g{
+    color:white;
+    width:80vw;
+    margin:0 auto;
+    font-size: 1.8em;
+}
+
+cite{
+    width:80vw;
+    margin:0 auto;
+    font-size:0.9em;
+}
+
+#mario{
+    font-size: 0.6em;
+}
+
+#cite{
+    width: 72vw;
+    margin: auto;
+}
+
+.card{
+    margin:0 auto;
+    border:1px solid #dee1e3;
+    width:80vw;
+    text-align: center;
+}
+
+.img-aside{
+    margin:0 auto;
+    width:80vw;
+}
+
+.card-container{
+    width: 60vw;
+    margin: auto;
+}
+
+.class-container>p{
+    margin-top: 0px;
+}
+
+.class-container>h5{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#footer-c{
+    color:white;
+}
+
+#div-footer{
+    color:white;
+    width: 70vw;
+    margin: auto;
+}
+
+#footer a:visited{
+    color:white;
+    text-decoration: none;
+}
+
+.icon{
+    font-size: 0.9em;
+}
+
+footer a:visited{
+    text-decoration: none;
+    color:white;
+}
+
+hr{
+    width:40vw;
+}
+>>>>>>> baba2a70ecbaa6bc50218b3234aac8b8787668ae
