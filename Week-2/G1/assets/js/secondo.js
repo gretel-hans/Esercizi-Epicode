@@ -1,4 +1,4 @@
-var testo="pantera scritto da Javascript"
+var testo='<div class="container">pantera scritto da Javascript</div>';
 document.write(testo);
 
 var primoAnimale="criceto";
