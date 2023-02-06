@@ -15,14 +15,15 @@ body{
     width:17vw;
 }
 
-a:link:hover{
-    color:black;
-}
-
 a:link{
     color:aliceblue;
 }
 
-a:link:visited{
+a:visited{
     text-decoration: none;
+    color:aliceblue;
+}
+
+a:hover{
+    color:black;
 }
