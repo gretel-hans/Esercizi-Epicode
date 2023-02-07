@@ -1,7 +1,7 @@
 //Esercizio 1
-var nome1='Aldo';   
+let nome1='Aldo';   
 const numero='3.14';
-let nome2='cliente';
+var nome2='cliente';
 document.getElementById('concatena').innerHTML=nome1+', '+nome2+', '+numero;
 
 
