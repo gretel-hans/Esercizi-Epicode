@@ -16,20 +16,15 @@ document.getElementById('concatena2').innerHTML=concatena;
 var nome3='Mario';
 document.getElementById('var').innerHTML=nome3;
 document.getElementById('final').innerHTML=nome3;
-
+document.getElementById('let2').innerHTML=nome3;
 
     {
     let nome4='Carla';
     document.getElementById('let').innerHTML=nome4;
-}
-
-{
-    let nome4='Carla';
-    let nome3='Mario';
-    document.getElementById('let2').innerHTML=nome3;
     document.getElementById('let3').innerHTML=nome4;
     document.getElementById('final2').innerHTML=nome4;
 }
+
 
 
 
