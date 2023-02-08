@@ -224,7 +224,7 @@ console.log(me);
 */
 
   var numbers=[];
-  numbers.push(2,10,65);
+  numbers.push(1,2,3,4,5,6,7,8,9,10);
   document.getElementById('es14').innerHTML=numbers;
   console.log(numbers);
 
@@ -235,7 +235,7 @@ console.log(me);
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
-numbers.splice(2,1,100);
+numbers.splice(9,1,100);
 document.getElementById('es15').innerHTML=numbers;
   console.log(numbers);
 
