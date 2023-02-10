@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    
+    <h1>La mia calcolatrice in JS</h1>
+    <hr>
+    <div id="container">
+        
+        <p id="scritta"><b>Calcolatrice</b></p>
+        
+
+        <p id="spazioDisplay">
+            <input type="text" name="display" id="operazioni" readonly="readonly" class="display">
+        </p>
+
+        <div class="riga">
+            <input type="submit" id="7" value="7" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="8" value="8" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="9" value="9" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="+" value="+" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="-" value="-" onclick="n(this.value)" class="tasto">
+
+        </div>
+        <div class="riga">
+            <input type="submit" id="4" value="4" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="5" value="5" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="6" value="6" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="/" value="/" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="*" value="X" onclick="n(this.value)" class="tasto">
+
+
+        </div>
+        <div class="riga">
+            <input type="submit" id="1" value="1" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="2" value="2" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="3" value="3" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="0" value="0" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="." value="." onclick="n(this.value)" class="tasto">
+
+        </div>
+        
+        <div class="riga">
+            <input type="submit" id="cancella" value="C" class="tasto">
+            <button value="=" id="risultato" class="uguale tasto">=</button>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
