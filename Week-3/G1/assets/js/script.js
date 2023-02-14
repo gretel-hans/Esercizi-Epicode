@@ -180,9 +180,10 @@ REGOLE
         }
     ]
     function shoppingCartTotal() {
-        for (let i = 0; i < shoppingCart.length; i++) {
-            console.log('Al negzio di ' + shoppingCart[i].name + ' devi: ' + (shoppingCart[i].price * shoppingCart[i].quantity + '€'))
-            TotaleCart += (shoppingCart[i].price * shoppingCart[i].quantity)
+        shoppingCart.forEach(miaFunzione);
+        function miaFunzione(element){
+            console.log('Al negzio di ' + element.name + ' devi: ' + (element.price * element.quantity + '€'));
+            TotaleCart += element.price * element.quantity;
         }
         console.log('In tutto ai negozi devi: ' + TotaleCart + '€');
     }
