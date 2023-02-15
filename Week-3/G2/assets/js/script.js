@@ -2,22 +2,80 @@
   Scrivi una funzione per concatenare due stringhe ricevute come parametri, selezionando solamente i primi 2 caratteri della
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
+{
+  let p1,p2;
+  function concatena(p1,p2){
+    var p1="";
+    var n1=(p1.slice(1,2));
+    var p2="";
+    var n2=(p2.slice(-5,3));
+    var ns = n1.concat(n2);
+    console.log((p1,p2));
+    return ns;
+  }
+
+
+concatena(p1,p2);
+}
+
 
 /* ESERCIZIO 2
   Scrivi una funzione per creare un array di soli valori DISPARI da 1 a 100.
  */
 
+  {
+    let arrayNumeri=[]
+    function genera(){
+      for(let i=1;i<100;i++){
+        let numero=i;
+        if (i%2!=0){
+          arrayNumeri.push(numero)
+        }
+      }
+      console.log(arrayNumeri);
+    }
+    genera();
+  }
+
 /* ESERCIZIO 3
   Scrivi una funzione per creare un array di soli valori multipli di 5, da 1 a 100.
  */
 
+  {
+    let arrayNumeri=[]
+    function genera(){
+      for(let i=1;i<100;i++){
+        let numero=i;
+        if (i%5==0){
+          arrayNumeri.push(numero)
+        }
+      }
+      console.log(arrayNumeri);
+    }
+    genera();
+  }
+
 /* ESERCIZIO 4
   Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
  */
+  {
+    let arrayNumeri=[]
+    function genera(){
+      for(let i=0;i<10;i++){
+        let numero=Math.floor(Math.random()*101)
+          arrayNumeri.push(numero)
+      }
+      console.log(arrayNumeri);
+    }
+    genera();
+  }
+
 
 /* ESERCIZIO 5
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici.
  */
+
+  
 
 /* ESERCIZIO 6
   Scrivi una funzione per sommare a catena i numeri contenuti in un array.
@@ -187,7 +245,8 @@ document.getElementById('ricerca').addEventListener('click',function(){
     for (let i=0;i<movies.length;i++){
         if(document.getElementById('selectFilm').value==movies[i].imdbID)
         {
-          document.getElementById('esitoFilm').innerHTML="Film trovato! <br>"+ 'Titolo: '+ movies[i].Title +'<br> Anno: ' + movies[i].Year + '<br> Type: '+movies[i].Type +'<br> Codice film:' + movies[i].imdbID;
+          document.getElementById('esitoFilm').innerHTML="";
+          document.getElementById('esitoFilm').innerHTML=`Film trovato! <br>Titolo: ${movies[i].Title}<br>Anno: ${movies[i].Year} <br>Type: ${movies[i].Type} <br>Codice film: ${movies[i].imdbID} <br><img src=${movies[i].Poster}>`;
         }
       }
   }
