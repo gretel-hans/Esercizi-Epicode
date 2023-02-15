@@ -1,6 +1,14 @@
 body {
     background-color: blueviolet;
 }
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:98vw;
+    height:98vh;
+}
 
 .fatto {
     font-weight: bold;
@@ -17,4 +25,17 @@ body {
         url('../font/fontawesome-webfont.woff') format('woff'),
         url('../font/fontawesome-webfont.ttf') format('truetype'),
         url('../font/fontawesome-webfont.svg#FontAwesome') format('svg');
+}
+
+#testo{
+width:40em;
+height:3em;
+border-radius: 10px;
+}
+
+#aggiungi{
+    width:120px;
+    height:2em;
+    border-radius: 10px;
+    border:2px solid black;
 }
