@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/stylesheet.css" />
+    <title>appoggio domande</title>
+  </head>
+  <body>
+    <div id="container1">
+      <header>
+        <img src="assets/img/epicode_logo.png" id="logo2" />
+        <div id="timer"></div>
+      </header>
+
+      <div id="question_box">
+        <div id="domanda">
+          <h3 clsss="quiz" id="exam">domanda</h3>
+        </div>
+        <!-- qua sta la domanda-->
+        <div id="option">
+          <!-- qua stanno le risposte-->
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="div_procedi">
+        <button id="pulsanti" disabled="true" onclick="valutazione(),test(),timer()" type="button">NEXT</button>
+      </div>
+      <p id="contatoreDomanda"></p>
+    </footer>
+
+    <script src="assets/js/question.js"></script>
+  </body>
+</html>
