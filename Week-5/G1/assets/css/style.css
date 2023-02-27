@@ -309,6 +309,7 @@ footer {
         height: 3em;
         flex-direction: row;
         display: flex;
+        justify-content: space-between;
     }
 
     header div img{
