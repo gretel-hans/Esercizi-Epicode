@@ -33,6 +33,13 @@ header {
   margin-bottom: 1.5em;
   padding: 2em 1.5em;
 }
+
+#HD-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 header div img {
   margin-bottom: 20px;
 }
@@ -218,8 +225,8 @@ footer a {
   }
 
   h1 {
-    font-size: 4.5rem;
-    line-height: 5rem;
+    font-size: 5.7rem;
+    line-height: 6rem;
     font-weight: 900;
     letter-spacing: -0.03em;
     margin-bottom: 0.7em;
@@ -230,10 +237,6 @@ footer a {
     box-shadow: 0 3px 3px #444;
     padding: 2em 1.5em;
     margin-bottom: 1.5em;
-  }
-
-  #AR-p1 {
-    font-size: 1.5rem;
   }
 
   h2 {
@@ -250,18 +253,19 @@ footer a {
     margin-bottom: 5em;
   }
 
-  th, td {
+  th,
+  td {
     padding: 15px 33px;
     vertical-align: bottom;
     text-align: center;
-}
+  }
 
-input {
+  input {
     padding: 5px;
     border: 0;
     border-bottom: 1px dashed #333;
-    height:3em;
-    width:26em;
+    height: 3em;
+    width: 26em;
   }
 
   button {
@@ -270,8 +274,8 @@ input {
     border: 0;
     color: white;
     font-weight: bold;
-    height:3em;
-    width:7em;
+    height: 3em;
+    width: 7em;
   }
   aside h2 {
     text-align: center;
@@ -280,44 +284,131 @@ input {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 1em;
-}
+  }
 
-aside div a{
-    font-size:1.3rem;
-}
+  aside div a {
+    font-size: 1.3rem;
+  }
 
-aside div p:last-child {
+  aside div p:last-child {
     margin-bottom: 0;
     font-size: 0.7em;
     text-align: right;
-}
-footer {
+  }
+  footer {
     background: rgb(53, 53, 53);
-    background: linear-gradient( 0deg, rgba(53, 53, 53, 1) 0%, rgba(5, 85, 103, 1) 68% );
+    background: linear-gradient(
+      0deg,
+      rgba(53, 53, 53, 1) 0%,
+      rgba(5, 85, 103, 1) 68%
+    );
     box-shadow: 0 3px 3px #444;
     color: #f0f0f0;
     padding: 1em;
     text-align: center;
     font-size: 1.4rem;
-}
-
+  }
 }
 
 @media screen and (min-width: 769px) {
-    header {
-        align-items: center;
-        height: 3em;
-        flex-direction: row;
-        display: flex;
-        justify-content: space-between;
-    }
+  header {
+    align-items: center;
+    height: 3em;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+  }
 
-    header div img{
-        width:130px;
-        margin-bottom:0;
-    }
+  header div img {
+    width: 130px;
+    margin-bottom: 0;
+    padding: 0.3em 1.5em;
+  }
 
-    #HD-p {
-        margin-bottom:0;
-    }
+  #HD-p {
+    margin-bottom: 0;
+  }
+  body {
+    font-family: Poppins, "Helvetica Neue", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 15px;
+    background-image: url(../img/sfondo.png);
+    background-position: center center;
+  }
+
+  #HD-div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: -1em;
+  }
+
+  #HD-p {
+    margin-bottom: 0;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  main article ul li {
+    margin: 0.7rem 0px;
+  }
+  main article h2 {
+    font-size: 1.2em;
+  }
+  caption {
+    font-size: 1.2rem;
+  }
+  td {
+    padding: 15px 51px;
+  }
+
+  main aside div {
+    width: 33%;
+    display: inline-block;
+    margin: 0px -2px;
+  }
+
+  #AS-div {
+    margin-left: 5px;
+  }
+
+  main aside h2 {
+    font-size: 2rem;
+  }
+
+  iframe {
+    width: 48%;
+  }
+
+  section {
+    height: auto;
+    display: inline-block;
+    width: 48%;
+    border-radius: 20px;
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+
+  #conta {
+    display: flex;
+  }
+
+  input {
+    height: 3em;
+    width: 16em;
+  }
+
+  img.responsive {
+    margin-bottom: 1em;
+  }
+
+  #AR-p2 {
+    font-size: 1.2rem;
+  }
+  #MA-p {
+    font-size: 0.98em;
+  }
 }
