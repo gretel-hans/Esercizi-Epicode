@@ -15,7 +15,9 @@
 </head>
 
 <body id="top">
-    <header>
+
+    <div>
+    <header id="su">
         <div class="brand">
             <img src="./assets/img/logo.svg" alt="logo del blog" width="250" height="60">
             <p>Epicode - Il blog dei developers</p>
@@ -29,12 +31,12 @@
         </nav>
 
     </header>
-
+</div>
     <hr>
 
     <main>
         <article class="clearfix">
-            <h1>Come creare un template per i post </h1>
+            <h1>Come creare un <span id="AR-string">template per i post <img id="underline" src="/assets/img/underline.svg"/></span></h1>
             <p><i class="fas fa-pen-square"></i> di Mario Rossi - <span><i class="fas fa-clock"></i> pubblicato il
                     25-10-2020</span></p>
             <img src="./assets/img/badge.png" class="imgLeft" alt="logo Html5" width="70" height="70">
@@ -158,6 +160,12 @@
             00112233. <a href="mailto:info@epicode.school"
                 title="contattami per informazioni/lavoro/privacy">info@epicode.school</a></address>
     </footer>
+    <button class="btn" id="btn1"><ion-icon name="add-circle-outline" id="icon1"></ion-icon></button>
+    <a href="https://calendar.google.com" target="_blank"><button class="btn" id="btn2"><ion-icon name="calendar-outline" id="icon2"></ion-icon></button></a>
+    <a href="#su"><button class="btn" id="btn3"><ion-icon name="arrow-up-outline" id="icon3"></ion-icon></button></a>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

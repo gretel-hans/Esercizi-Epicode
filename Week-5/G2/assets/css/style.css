@@ -18,6 +18,8 @@ hr {
 
 /* HEADER */
 header {
+  position:fixed;
+  top:0;
   background: rgb(0, 160, 198);
   background: linear-gradient(180deg, rgba(0, 160, 198, 1) 0%, rgba(3, 109, 134, 1) 68%);
   text-align: center;
@@ -31,6 +33,7 @@ header {
 
 @media screen and (min-width: 800px) {
   header {
+    position:static;
     padding: 1em;
   }
 }
@@ -44,6 +47,7 @@ header {
 @media screen and (min-width: 1200px) {
   header {
     text-align: left;
+    position:static;
   }
   header .brand,
   header nav,
@@ -91,6 +95,7 @@ main {
   padding: 2em 1em;
   margin-bottom: 1.5em;
 }
+
 @media screen and (min-width: 700px) {
   main {
     padding: 2em;
@@ -112,16 +117,31 @@ section h2 {
   font-weight: bold;
   background-color: #a3a3a3;
   padding: 0px 1em;
+  width: 138px;
+  position: absolute;
+  top: -11%;
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
 
+#AR-string{
+  position:relative;
+  width:auto;
+}
 h1 {
   font-size: 2.6rem;
   line-height: 1.2;
   font-weight: bold;
   letter-spacing: -0.03em;
   margin-bottom: 0.7em;
+}
+
+#underline{
+  position: absolute;
+  top:80%;
+  left:0%;
+  width:99%;
+  opacity: 0.5;
 }
 
 p,
@@ -165,6 +185,16 @@ h1 + p {
     font-size: 1.4rem;
     font-weight: 700;
   }
+  #btn1{
+    top:1%;
+    background-color:rgba(128,128,128,0.3);
+    border:4px solid white;
+  }
+  #btn2{
+    top:11%;
+    background-color:rgba(128,128,128,0.3);
+    border:4px solid white;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -187,6 +217,7 @@ h1 + p {
   border: 4px solid #00a0c6;
   outline: 4px solid #a02571;
   padding: 3px;
+  float: left;
 }
 ul,
 ol {
@@ -281,6 +312,7 @@ button {
   border: 0;
   color: white;
   font-weight: bold;
+  cursor: pointer;
 }
 @media screen and (min-width: 500px) {
   input {
@@ -292,7 +324,7 @@ button {
   input {
     padding: 15px;
   }
-  button {
+  section form fieldset button {
     padding: 15px 30px;
   }
 }
@@ -311,13 +343,39 @@ aside div {
   border: 1px solid #c3c3c3;
   margin-bottom: 1em;
   padding: 1em;
+  position: relative;
 }
+
+.fas.fa-tag{
+  position: absolute;
+  font-size: 3em;
+  top: 8%;
+  left: 80%;
+  opacity: 0.2;
+}
+@media screen and (min-width: 700px){
+  .fas.fa-tag{
+    position: absolute;
+    font-size: 3em;
+    top: 8%;
+    left: 89%;
+    opacity: 0.2;
+  }
+}
+
 
 @media screen and (min-width: 1200px) {
   aside div {
     display: inline-block;
     width: 33.333%;
     margin-inline: -2px;
+  }
+  .fas.fa-tag{
+    position: absolute;
+    font-size: 3em;
+    top: 8%;
+    left: 81%;
+    opacity: 0.2;
   }
 }
 aside div p:last-child {
@@ -337,10 +395,44 @@ footer {
   font-size: 1.2rem;
 }
 
+.btn{
+  border-radius: 11px;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: -9px;
+}
+
+#btn1{
+  bottom:28%;
+  background-color:rgba(128,128,128,0.3);
+  border:4px solid white;
+}
+#btn2{
+  bottom:15%;
+  background-color:rgba(128,128,128,0.3);
+  border:4px solid white;
+}
+#btn3{
+  bottom:2%;
+  background-color:rgba(128,128,128,0.3);
+  border:4px solid white;
+}
+
+#icon1,#icon2{
+  color: blue;
+    font-size: 35px;
+}
+#icon3{
+  font-size: 35px;
+  color:red;
+}
+
+
 @media screen and (min-width: 800px) {
   footer {
     padding: 1em 12em;
-  }
+  }  
 }
 
 footer a {
