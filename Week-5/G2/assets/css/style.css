@@ -216,6 +216,12 @@ h1 + p {
   section {
     border-radius: 20px;
   }
+  section h2{
+    top: -8%;
+  }
+  section p{
+    margin-top: 1em;
+  }
 }
 
 .imgLeft {
