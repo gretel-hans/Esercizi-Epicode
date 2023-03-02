@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+  height: 100vh;
+  font-family: 'Indie Flower', cursive;
+  background-color: rgba(102,102,102,255);
+}
+h2{
+    font-size: 2em
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 1205px;
+  height: 60%;
+}
+
+.postIt {
+  width: 250px;
+  height: 250px;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset -7px -76px 38px -3px rgba(0, 0, 0, 0.2);
+}
+
+#container div:nth-child(1),
+#container div:nth-child(5),
+#container div:nth-child(7) {
+  background-color: rgba(239, 239, 187, 255);
+  transform: rotate(355deg);
+}
+
+#container div:nth-child(2),
+#container div:nth-child(4),
+#container div:nth-child(8) {
+  background-color: rgba(182, 215, 183, 255);
+  transform: rotate(6deg);
+}
+
+#container div:nth-child(3),
+#container div:nth-child(6) {
+  background-color: rgba(197, 197, 240, 255);
+  transform: rotate(351deg);
+}
+
+
+#container .postIt:hover{
+    transform: scale(1.3,1.3) rotate(360deg) ;
+}
