@@ -8,3 +8,102 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+#testoAlternato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+p{
+    border:2px solid black;
+    padding: 1em;
+    position:relative;
+    width: 290px;
+}
+
+@keyframes animazioneParola {
+    0%{
+        opacity:0;
+        transform: translateY(-40px);
+    }
+    50%{
+        opacity:0;
+        transform: translateY(-30px);
+    }
+    65%{
+        opacity:0;
+        transform: translateY(-20px);
+    }
+    80%{
+        opacity:0.6;
+        transform: translateY(-10px);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes animazioneParola2 {
+    0%{
+        opacity:0;
+        transform: translateY(-40px);
+    }
+    50%{
+        opacity:0;
+        transform: translateY(-30px);
+    }
+    65%{
+        opacity:0;
+        transform: translateY(-20px);
+    }
+    80%{
+        opacity:0.6;
+        transform: translateY(-10px);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes animazioneParola3 {
+    0%{
+        opacity:0;
+        transform: translateY(-40px);
+    }
+    50%{
+        opacity:0;
+        transform: translateY(-30px);
+    }
+    65%{
+        opacity:0;
+        transform: translateY(-20px);
+    }
+    80%{
+        opacity:0.6;
+        transform: translateY(-10px);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0px);
+    }
+}
+
+.parole i:nth-child(1){
+    position: absolute;
+    animation: animazioneParola 10s linear 0s infinite;
+}
+
+
+.parole i:nth-child(2){
+    animation: animazioneParola2 10s linear 5s infinite;
+    position: absolute;
+}
+
+.parole i:nth-child(3){
+    opacity: 0;
+    animation: animazioneParola3 10s ease-out 2.5s infinite;
+    position: absolute;
+}
