@@ -30,15 +30,15 @@ h2{
     #container{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
 }
 }
 
 /*Navbar*/
 #navbar{
     position: sticky;
-    top: 0;
-    width: 302px;
+    top: 0px;
+    width: 320px;
 }
 
 nav ul{
@@ -93,6 +93,7 @@ nav{
 @media screen and (min-width:636px){
     #navbar{
             width: 100%;
+            top: 0px;
     }
     #SHOP{  
         order:2;
@@ -105,29 +106,42 @@ nav{
     width:100%;
     margin-left: 1em;
   }
+#FC-content h2{
+    margin-left:0;
+}
+
 }
 
 @media screen and (min-width:900px) {
     #navbar{
-        height:271vh;
+        position: sticky;
+        top: -50px;
+        width: 137px;
+        height:100vh;
     }
     nav{
-        height:97vh;
+        position: sticky;
+    top: 0;
+    height: 95vh;
     }
     nav ul{
-        height:90%;
+        height:98%;
+        padding-top: 3em;
     }
     li{
         order: 2;
-        height: 76px;
-        width: 135px;
+        height: 100px;
+        width: 170px;
         font-size: 1.5em;
         font-weight: bold;
     }
     #SHOP{
         order: 1;
-        height: 76px;
-        width: 135px;
+        height: 100px;
+        width: 170px;
+    }
+    #card-container div:nth-child(4), #card-container div:nth-child(5),#card-container div:nth-child(6){
+        display: none;
     }
 }
 /*Product card*/
