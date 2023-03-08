@@ -188,10 +188,14 @@ while (numericArray[i] != 32) {
 */
 console.log("Esercizio 14");
 //const charactersArray = ['g', 'n', 'u', 'z', 'd']
-const charactersArray = ['f', 'a', 'g', 'e','?']
+const charactersArray = ['C', 'I', 'A', 'e','?']
+let neyArr=[];
+
+
 let newArray = []
 for (let i = 0; i < charactersArray.length; i++) {
-    switch (charactersArray[i]) {
+    neyArr[i]=(charactersArray[i].toLowerCase());
+    switch (neyArr[i]) {
         case "a":
             newArray += 1 + " ";
             break;
@@ -272,7 +276,7 @@ for (let i = 0; i < charactersArray.length; i++) {
             newArray += 26 + " ";
             break;
         default:
-            newArray += charactersArray[i] + " non è un numero";
+            newArray += neyArr[i] + ": non è un numero";
 
     }
 }
