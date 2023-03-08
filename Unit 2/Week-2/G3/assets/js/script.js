@@ -41,7 +41,7 @@ console.log(pets);
 */
 console.log("Esercizio 5");
 
-pets.push(pets.splice(0, 1))
+pets.push(pets.splice(0, 1)[0])
 console.log(pets);
 
 
