@@ -66,6 +66,7 @@ for (let i = 0; i < pets.length; i++) {
     }
 }
 
+
 /* ESERCIZIO 7
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
 */
