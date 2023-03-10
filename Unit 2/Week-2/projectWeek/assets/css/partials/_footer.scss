@@ -1,0 +1,50 @@
+footer{
+    margin:2em 0;
+    a{
+      color:gray;  
+    }
+    
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom:2em;
+    .socialIcons{
+        width:19%;
+        padding-bottom: 1em;
+    }
+    ul{
+        align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 13px;
+    margin: 0 0 14px;
+    padding: 0;
+    li{
+        flex-basis: 25%;
+        margin-right: 0em;
+        margin-bottom:1.5em;
+        color:gray;
+        cursor: pointer;
+    }
+    }
+    button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        color:grey;
+        border:1px solid gray;
+        border-radius: 0;
+        height:2.1em;
+        margin-bottom: 1em;
+        span{
+            font-size: 0.8em;
+        }
+    }
+    p{
+        color:gray;
+        font-size: 0.7em;
+    }
+}
+

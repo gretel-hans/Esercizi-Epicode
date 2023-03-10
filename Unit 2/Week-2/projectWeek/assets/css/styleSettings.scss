@@ -1,0 +1,103 @@
+@import './partials/checkbox';
+body{
+    background-color: black;
+    color:white;
+}
+
+header {
+    img{
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+}
+
+.container{
+    padding-left: 10em;
+}
+
+#generesDropdown{
+    border:2px solid white;
+    border-radius: 0px;
+    height:2em;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    span{
+        margin-right: 0.8em;
+    }
+}
+
+#epicodeStudent{
+    display: flex;
+    background-color: gray;
+    width: 20em;
+    height: 2.5em;
+    padding-left: 0.7em;
+    align-items: center;
+}
+
+.dropdown{
+    p{
+        margin:0;
+        margin-bottom: 0.4em;
+        color:gray;
+    }
+}
+
+#maturatyRatings{
+    @extend#epicodeStudent;
+    width:13em;
+    height:2em;
+    background-color: rgb(48, 46, 46);
+    margin:0.8em 0;
+}
+
+.maturity{
+    padding-left: 10em;
+    button{
+        background-color: transparent;
+        color:gray;
+        border:1px solid gray;
+        width:5em;
+        height:2.5em;
+        letter-spacing: 0.1em;
+        margin-bottom:1em;
+    }
+    h6{
+        color:gray;
+        margin:0;
+    }
+    p{
+        margin-bottom:1em;
+    }
+}
+
+.autoPlay{
+    padding-left: 10em;
+    h6{
+        color:gray;
+    }
+}
+.buttons{
+    max-width:620px;
+    button{
+        background-color: transparent;
+        color:gray;
+        border:1px solid gray;
+        width:auto;
+        height:2.3em;
+        letter-spacing: 0.1em;
+        margin-bottom:1em;
+        padding:1.2em;
+    }
+
+}
+
+#hr{
+    width:370px;
+}
+
+#hr2{
+    width:630px;
+}
+

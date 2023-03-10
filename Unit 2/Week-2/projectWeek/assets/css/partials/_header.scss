@@ -1,0 +1,56 @@
+.navbar-brand{
+    img{
+        max-width:100px;
+        margin-left: -7px;
+    }
+}
+
+nav{
+    background-color: black;
+}
+
+#navRight{
+    width:20%;
+    max-width: 165px;
+}
+
+#navbarSupportedContent{font-size: 0.7em;
+font-weight: 400;}
+
+#generesDropdown{
+    border:1.5px solid gray;
+    border-radius: 0px;
+    height:2em;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    span{
+        margin-right: 0.8em;
+    }
+}
+
+#heroIcons{
+    span{
+        border:1px solid gray;
+        height:2em;
+        padding:0.3em;
+    }
+    span:nth-child(2){
+        margin-left: -4px;
+    }
+}
+
+#hero{
+    h2{
+        float: left;
+    margin-right: 1em;
+    }
+    ul{
+        background-color: black;
+    }
+}
+
+header{
+    padding:0 1.5em 2em 1.5em;
+}
+
