@@ -43,9 +43,9 @@ class Pet{
 
 listCreate=(Pet1)=>{
     let lista=document.createElement('li');
-    lista.classList.add('list-group-item');
+    lista.classList.add('list-group-item', 'list-group-item-primary');
     lista.innerText=`Il Pet di ${Pet1.ownerName} si chiama ${Pet1.petName}, ed è un ${Pet1.species} di razza ${Pet1.breed}`;
-    document.getElementsByClassName('list-group list-group-item-primary')[0].appendChild(lista);
+    document.getElementsByClassName('list-group')[0].appendChild(lista);
     PetName.value='';
     OwnerName.value='';
     SpeciesName.value='';
