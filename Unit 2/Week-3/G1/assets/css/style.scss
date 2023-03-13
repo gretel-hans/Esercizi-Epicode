@@ -1,0 +1,26 @@
+h4{
+    color:blue;
+}
+
+.row{
+    margin: 0 auto;
+    width: 90%;
+    border: 1.5px solid blue;
+    border-radius: 15px;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+.list-group{
+    margin: 0 auto;
+    width: 90%;
+}
+
+@media screen and (min-width:500px) {
+    .row{
+        width: 65%;
+    }
+    .list-group{
+        width: 65%;
+    }
+}
+
