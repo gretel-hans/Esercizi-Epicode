@@ -10,7 +10,7 @@ let nameArray=[];
 const mostraUltimo=()=>{
     ultimoNome=document.createElement('li');
     ultimoNome.classList.add('list-group-item', 'list-group-item-primary');
-    ultimoNome.innerText='Nome inserito: '+(nameArray[nameArray.length-2]);
+    ultimoNome.innerText='Nome inserito: '+(nameArray[nameArray.length-1]);
     lista.appendChild(ultimoNome);
 }
 
@@ -20,9 +20,7 @@ btnSalva.onclick=()=>{
         nameArray.push(inpuName.value)
         localStorage.setItem('name',JSON.stringify(nameArray));
         console.log(nameArray[nameArray.length-2]);
-        if(nameArray.length>1){
-            mostraUltimo();  
-        }
+            mostraUltimo(); 
         inpuName.value='';
     }else{
         alert('Inserisci un campo nell\'input per poter procedere');
