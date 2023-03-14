@@ -42,16 +42,15 @@ btnCancellaTutto.addEventListener('click',()=>{
     localStorage.removeItem('name');
 }) 
 
+
+
+
 let i;
 if (!sessionStorage.getItem('secondi')){
      i=0;
 }else{
-    i=parseInt(sessionStorage.getItem('secondi')) ;
+    i=sessionStorage.getItem('secondi') ;
 }
-
-
-
-
 
 const contaSecondi=()=>{
     sessionStorage.setItem('secondi',i);
