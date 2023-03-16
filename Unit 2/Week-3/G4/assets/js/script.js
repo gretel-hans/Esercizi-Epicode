@@ -37,7 +37,6 @@ const estraiFoto=(foto)=>{
     </div>
   </div>`;
   rowReference.appendChild(newCol); 
-  console.log((`${urlView}${foto.alt}/${foto.id}`).trim())
     });
 }
 
@@ -54,7 +53,7 @@ fetch(url1,{
 .then((foto)=>{
     //console.log(foto.photos);
     let arrayFoto=foto.photos;
-    console.log(arrayFoto);
+    //console.log(arrayFoto);
     estraiFoto(arrayFoto);
 })
 .catch(err=>{console.log(err)});

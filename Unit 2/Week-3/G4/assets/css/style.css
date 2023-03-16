@@ -45,6 +45,10 @@ footer p {
     font-size: 3.5rem;
   }
 }
-.col img {
+#fotoWrapper {
+  max-height: 80vh;
+}
+#fotoWrapper img {
   width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
