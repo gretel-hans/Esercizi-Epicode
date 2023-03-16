@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 .card-body {
   display: flex;
   flex-direction: column;
@@ -17,4 +18,29 @@
   .card img {
     height: 20em;
   }
+}
+
+#btnCarrello {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.cartDiv {
+  width: 278px;
+  font-size: 0.8rem;
+}
+
+#cartList p {
+  margin-bottom: 0;
+}
+#cartList li {
+  width: 360px;
+}
+#cartList .cartPrice {
+  margin-right: 13px;
+}
+
+.offcanvas {
+  font-size: 0.8rem;
 }/*# sourceMappingURL=style.css.map */
