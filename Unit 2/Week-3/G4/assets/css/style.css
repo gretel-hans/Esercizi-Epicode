@@ -44,4 +44,7 @@ footer p {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
+}
+.col img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

@@ -5,14 +5,17 @@ let standardUrl='https://api.pexels.com/v1/search?query=';
 let url1='https://api.pexels.com/v1/search?query=nature';
 let url2='https://api.pexels.com/v1/search?query=cats';
 
+let urlView='https://www.pexels.com/photo/'
+
 let btnReference=document.getElementById('btnSearch');
 let fotoquery=document.getElementById('searchFoto');
 
 const estraiFoto=(foto)=>{
     rowReference.innerHTML=``;
-    foto.forEach(foto => {
+    foto.forEach((foto, index) => {
        let newCol=document.createElement('div');
     newCol.classList.add('col-md-4');
+    newCol.setAttribute('id',index)
     newCol.innerHTML=`<div class="card mb-4 shadow-sm">
     <img src="${foto.src.original}" height="200px">
     <div class="card-body">
@@ -22,10 +25,10 @@ const estraiFoto=(foto)=>{
       </p>
       <div class="d-flex justify-content-between align-items-center">
         <div class="btn-group">
-          <div type="button" class="btn btn-sm btn-outline-secondary">
+          <a href="details.html?fotografoNome=${foto.photographer}&fotografoLink=${foto.photographer_url}&srcFoto=${foto.src.original}&titoloFoto=${foto.alt}" type="button" class="btn btn-sm btn-outline-secondary">
             View
-          </div>
-          <div type="button" id="hide" onclick="nascondiCard()" class="btn btn-sm btn-outline-secondary">
+          </a>
+          <div type="button" id="${index}" onclick="nascondiCard(${index})" class="hide btn btn-sm btn-outline-secondary">
             HIDE
           </div>
         </div>
@@ -34,6 +37,7 @@ const estraiFoto=(foto)=>{
     </div>
   </div>`;
   rowReference.appendChild(newCol); 
+  console.log((`${urlView}${foto.alt}/${foto.id}`).trim())
     });
 }
 
@@ -50,7 +54,7 @@ fetch(url1,{
 .then((foto)=>{
     //console.log(foto.photos);
     let arrayFoto=foto.photos;
-    //console.log(arrayFoto[0]);
+    console.log(arrayFoto);
     estraiFoto(arrayFoto);
 })
 .catch(err=>{console.log(err)});
@@ -88,10 +92,16 @@ const caricaFoto2=()=>{
             return response.json();
         })
         .then((foto)=>{
-            //console.log(foto.photos);
+            if(foto.photos.length===0){
+                rowReference.innerHTML=``;
+                rowReference.innerHTML=`<h2 class="text-danger mx-auto">La parola cercata non ha foto presenti sul nostro sito!</h2>`
+                console.log('l\'ggetto cercato non ha album');
+            }else{
             let arrayFoto=foto.photos;
             //console.log(arrayFoto[0]);
             estraiFoto(arrayFoto);
+            }
+
         })
         .catch(err=>{console.log(err)});
         fotoquery.value=''; 
@@ -99,7 +109,9 @@ const caricaFoto2=()=>{
         
     )
 
-    const nascondiCard=()=>{
-        let btnHide=document.getElementById('hide');
-        console.log(btnHide.closest('div .col-md-4'))
+let btnHide=document.querySelector('hide');
+    const nascondiCard=(index)=>{
+        let divEliminato=document.getElementById(`${index}`);
+        divEliminato.style.display='none';
+        //console.log(divEliminato);
     }
