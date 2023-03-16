@@ -76,6 +76,7 @@ const caricaFoto2=()=>{
     .catch(err=>{console.log(err)});
     } 
 
+    
     btnReference.addEventListener('click',()=>{
         fetch(standardUrl+fotoquery.value,{
             method:'GET',
