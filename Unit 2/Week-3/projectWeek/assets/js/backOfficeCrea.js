@@ -7,6 +7,8 @@ let newProduct = {}
 
 let btnProsegui = document.getElementById('proseguiCreazione');
 
+
+
 btnProsegui.addEventListener('click', () => {
     newProduct = {
         name: productName.value,
