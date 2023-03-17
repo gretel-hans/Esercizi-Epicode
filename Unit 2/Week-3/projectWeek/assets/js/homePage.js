@@ -17,6 +17,7 @@ const creaProdotto = (prodotto) => {
                     <img src="${product.imageUrl}" class="card-img-top" alt="...">
                     <div class="card-body text-center">
                         <h5 class="card-title">${product.name}</h5>
+                        <h6 class="card-title">${product.brand}</h6>
                         <p class="card-text" id="textDescription">${product.description}</p>
                         <h4 class="card-text">${product.price}€</h4>
                         <div class="d-flex justify-content-between" style="width:100%">
