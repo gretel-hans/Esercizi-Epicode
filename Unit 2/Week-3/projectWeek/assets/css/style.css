@@ -1,0 +1,52 @@
+.row {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav-link {
+  width: 100%;
+}
+
+#caricamento {
+  width: 16em;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+#caricamento .spinner-border {
+  width: 7em;
+  height: 7em;
+}
+
+.card img {
+  margin: 1em auto;
+  max-width: 10em;
+}
+
+#textDescription {
+  max-height: 4.5em;
+  overflow-y: auto;
+}
+
+.card {
+  height: 30em;
+}
+
+.nascondi {
+  display: none;
+}
+
+#dettaglioFoto img {
+  max-width: 80%;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+a {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
