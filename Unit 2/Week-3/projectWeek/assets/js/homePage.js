@@ -14,7 +14,7 @@ const creaProdotto = (prodotto) => {
         colReference.classList.add('col');
         colReference.innerHTML = `
     <div class="card">
-                    <img src="${product.imageUrl}" class="card-img-top" alt="...">
+                    <a class="d-flex" href="dettaglioProdotto.html?productId=${product._id}" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"><img src="${product.imageUrl}" href="dettaglioProdotto.html?productId=${product._id}" class="card-img-top" alt="..."></a>
                     <div class="card-body text-center">
                         <h5 class="card-title">${product.name}</h5>
                         <h6 class="card-title">${product.brand}</h6>
@@ -22,7 +22,7 @@ const creaProdotto = (prodotto) => {
                         <h4 class="card-text">${product.price}€</h4>
                         <div class="d-flex justify-content-between" style="width:100%">
                             <div class="row row-cols-1">
-                                <a href="backOfficeModifica.html?productId=${product._id}" class="col btn btn-outline-success">Modify</a>
+                                <a href="backOffice.html?productId=${product._id}" class="col btn btn-outline-success">Modify</a>
                                 <a href="dettaglioProdotto.html?productId=${product._id}" class="col btn btn-outline-primary">Find out more</a>
                             </div>
                         </div>

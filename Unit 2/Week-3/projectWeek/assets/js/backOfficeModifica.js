@@ -7,10 +7,11 @@ let productPrice = document.getElementById('productPrice')
 
 let btnCancellazione = document.getElementById('proseguiCancellazione');
 let btnProseguiModifica = document.getElementById('proseguiModifica')
+let btnresetInfo = document.getElementById('resetInfo');
 
 
 let idProdotto = new URLSearchParams(window.location.search).get('productId')
-console.log(idProdotto);
+//console.log(idProdotto);
 let prodottoOttenuto = [];
 
 let prodottoDaInviare = [];
@@ -34,7 +35,7 @@ const getFetch = () => {
             return response.json();
         })
         .then(products => {
-            console.log(products);
+            //console.log(products);
             prodottoOttenuto = products;
             riempiProdotto(prodottoOttenuto);
         })
@@ -45,7 +46,11 @@ const getFetch = () => {
 
 getFetch();
 
-
+btnresetInfo.addEventListener('click', () => {
+    if (confirm('Are you sure you want to reset the Product details?') === true) {
+        getFetch();
+    }
+});
 
 
 
