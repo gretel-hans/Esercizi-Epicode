@@ -145,6 +145,8 @@ const eseguiFetch = (prodottoNuovo) => {
             } else {
                 alert('ERRORE prodotto non salvato')
             }
+        }).catch(error => {
+            console.log(error)
         })
 }
 
@@ -226,6 +228,8 @@ const faiFetch = () => {
             } else {
                 alert('ERRORE prodotto non modificato')
             }
+        }).catch(error => {
+            console.log(error)
         })
 }
 //console.log(faiFetch);
