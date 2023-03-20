@@ -28,7 +28,7 @@ let h2Reference = document.getElementById('backofficeTitle');
 
 if (!idProd) {
     h2Reference.innerText = "Welcome to the Product creation page!";
-    console.log('Pagina da creare');
+    //console.log('Pagina da creare');
     containerReference.innerHTML = `
     <button type="button" class="btn btn-danger" data-bs-toggle="modal"
     data-bs-target="#staticBackdrop">
@@ -62,7 +62,7 @@ if (!idProd) {
     </div>
     `;
 } else {
-    console.log('Ciaooo');
+    //console.log('Ciaooo');
     h2Reference.innerText = "Welcome to the Product modification page!"
     containerReference.innerHTML = `
     <a type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -142,8 +142,18 @@ const eseguiFetch = (prodottoNuovo) => {
             if (response.ok) {
                 alert('Prodotto salvato con successo');
                 pulisciInput();
-            } else {
-                alert('ERRORE prodotto non salvato')
+            }
+            else if (response.status == 400) {
+                alert('La richiesta eseguita per visualizzare i nostri prodotti è andato in errore')
+            }
+            else if (response.status == 401) {
+                alert('La richiesta eseguita per visualizzare i nostri prodotti è andato in errore per un problema nell\'autorizzazione al nostro server')
+            }
+            else if (response.status == 404) {
+                alert('Non sono state trovate le informazioni cercate')
+            }
+            else if (response.status == 500) {
+                alert('C\'è un problema nel server')
             }
         }).catch(error => {
             console.log(error)
@@ -175,7 +185,21 @@ const getFetch = () => {
         }
     })
         .then(response => {
-            return response.json();
+            if (response.ok) {
+                return response.json();
+            }
+            else if (response.status == 400) {
+                alert('La richiesta eseguita per visualizzare il prodotto è andato in errore')
+            }
+            else if (response.status == 401) {
+                alert('La richiesta eseguita per visualizzare il nostro prodotto è andato in errore per un problema nell\'autorizzazione al nostro server')
+            }
+            else if (response.status == 404) {
+                alert('Non sono state trovate le informazioni cercate')
+            }
+            else if (response.status == 500) {
+                alert('C\'è un problema nel server')
+            }
         })
         .then(products => {
             //console.log(products);

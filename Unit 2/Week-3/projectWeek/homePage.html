@@ -14,30 +14,44 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-sm bg-body-tertiary pb-0">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="homePage.html"><img src="./assets/img/mediaworld-logo-vector.png"
-                        width="130px"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse text-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item mx-auto">
-                            <a class="nav-link" href="homePage.html">Home Page</a>
-                        </li>
-                        <li class="nav-item mx-auto">
-                            <a class="nav-link" href="backOffice.html">Back Office</a>
-                        </li>
-                    </ul>
+        <nav class="navbar navbar-expand-md bg-body-tertiary pb-0">
+            <div class="container p-0">
+                <div class="row row-cols-2 row-cols-sm-3">
+
+                    <div>
+                        <a class="navbar-brand" href="homePage.html"><img src="./assets/img/mediaworld-logo-vector.png"
+                                width="130px"></a>
+                    </div>
+                    <div>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="text" onInput="stampaRisultato()" id="txt"
+                                placeholder="Search for a Product..." aria-label="Search">
+                        </form>
+                    </div>
+                    <div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse text-center justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item mx-auto">
+                                    <a class="nav-link" href="homePage.html">Home Page</a>
+                                </li>
+                                <li class="nav-item mx-auto">
+                                    <a class="nav-link" href="backOffice.html">Back Office</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <h1 class="text-center text-danger">Welcome on MediaWorld</h1>
+        <h1 class="text-center text-danger">Welcome on MediaWorld!</h1>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
             <div id="caricamento">
                 <div class="spinner-border mx-auto text-danger mb-2" role="status">

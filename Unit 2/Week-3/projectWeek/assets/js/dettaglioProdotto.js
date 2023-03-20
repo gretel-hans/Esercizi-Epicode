@@ -28,10 +28,24 @@ const getFetch = () => {
         }
     })
         .then(response => {
-            return response.json();
+            if (response.ok) {
+                return response.json();
+            }
+            else if (response.status == 400) {
+                alert('La richiesta eseguita per visualizzare i nostri prodotti è andato in errore')
+            }
+            else if (response.status == 401) {
+                alert('La richiesta eseguita per visualizzare i nostri prodotti è andato in errore per un problema nell\'autorizzazione al nostro server')
+            }
+            else if (response.status == 404) {
+                alert('Non sono state trovate le informazioni cercate')
+            }
+            else if (response.status == 500) {
+                alert('C\'è un problema nel server')
+            }
         })
         .then(products => {
-            console.log(products);
+            //console.log(products);
             detailArray = products;
             riempiDettagli(detailArray);
         })
