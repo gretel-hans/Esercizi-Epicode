@@ -1,6 +1,6 @@
 const Button =(props)=>(
     <>
-    <button>{props.testoPulsante}</button>
+    <button><a href={props.Link}>{props.testoPulsante}</a></button>
     </>
 )
 

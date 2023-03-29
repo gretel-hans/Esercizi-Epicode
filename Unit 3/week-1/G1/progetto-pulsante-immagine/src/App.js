@@ -24,9 +24,9 @@ function App() {
       </header>
       <main>
         <h2>Benvenuto nel sito</h2>
-        <Button testoPulsante='Google'/>
-        <Button testoPulsante='Youtube'/>
-        <Button testoPulsante='Instagram'/>
+        <Button testoPulsante='Google' Link='https://www.google.it/'/>
+        <Button testoPulsante='Youtube' Link='https://www.youtube.it/'/>
+        <Button testoPulsante='Instagram' Link='https://www.instagram.it/'/>
         
           <h3>Questa è la sezione delle immagini</h3>
           <div id='container'>
