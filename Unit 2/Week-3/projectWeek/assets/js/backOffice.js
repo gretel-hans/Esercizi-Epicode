@@ -1,3 +1,5 @@
+
+
 let idProd = new URLSearchParams(window.location.search).get('productId')
 let containerReference = document.getElementById('backOfficeContainer')
 
@@ -134,7 +136,7 @@ const eseguiFetch = (prodottoNuovo) => {
         method: 'POST',
         body: JSON.stringify(prodottoNuovo),
         headers: {
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDE0MzBkZGY4MWI0MjAwMTM5YjI3ZTciLCJpYXQiOjE2NzkwNDQ4MjksImV4cCI6MTY4MDI1NDQyOX0.yjchb6DJi01o7J__Q8QMEvT91DmGJh8J5Qx0dgXPKDk",
+            "Authorization": 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDgxN2M1ZWU3ODE4NzAwMTVjMjY3YTgiLCJpYXQiOjE2ODIxNTMwMzEsImV4cCI6MTY4MzM2MjYzMX0.QfrHGNkOSFPjhD4t65_wyQTG95iDLuy3soAJSn9i3G0',
             "Content-Type": "application/json",
         }
     })
@@ -181,7 +183,7 @@ const riempiProdotto = (prodotto) => {
 const getFetch = () => {
     fetch(`https://striveschool-api.herokuapp.com/api/product/${idProdotto}`, {
         headers: {
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDE0MzBkZGY4MWI0MjAwMTM5YjI3ZTciLCJpYXQiOjE2NzkwNDQ4MjksImV4cCI6MTY4MDI1NDQyOX0.yjchb6DJi01o7J__Q8QMEvT91DmGJh8J5Qx0dgXPKDk"
+            "Authorization": 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDgxN2M1ZWU3ODE4NzAwMTVjMjY3YTgiLCJpYXQiOjE2ODIxNTMwMzEsImV4cCI6MTY4MzM2MjYzMX0.QfrHGNkOSFPjhD4t65_wyQTG95iDLuy3soAJSn9i3G0'
         }
     })
         .then(response => {
@@ -241,7 +243,7 @@ const faiFetch = () => {
         method: 'PUT',
         body: JSON.stringify(prodottoDaInviare),
         headers: {
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDE0MzBkZGY4MWI0MjAwMTM5YjI3ZTciLCJpYXQiOjE2NzkwNDQ4MjksImV4cCI6MTY4MDI1NDQyOX0.yjchb6DJi01o7J__Q8QMEvT91DmGJh8J5Qx0dgXPKDk",
+            "Authorization": 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDgxN2M1ZWU3ODE4NzAwMTVjMjY3YTgiLCJpYXQiOjE2ODIxNTMwMzEsImV4cCI6MTY4MzM2MjYzMX0.QfrHGNkOSFPjhD4t65_wyQTG95iDLuy3soAJSn9i3G0',
             "Content-Type": "application/json",
         }
     })
@@ -270,7 +272,7 @@ const faiFetch = () => {
 const faiFetchCancellazione = () => {
     fetch(`https://striveschool-api.herokuapp.com/api/product/${idProdotto}`, {
         headers: {
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDE0MzBkZGY4MWI0MjAwMTM5YjI3ZTciLCJpYXQiOjE2NzkwNDQ4MjksImV4cCI6MTY4MDI1NDQyOX0.yjchb6DJi01o7J__Q8QMEvT91DmGJh8J5Qx0dgXPKDk"
+            "Authorization": token
         },
         method: "DELETE"
     })
