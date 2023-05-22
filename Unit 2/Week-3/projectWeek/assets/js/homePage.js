@@ -1,3 +1,5 @@
+//https://strive.school/studentlogin new bearer
+
 let productsArray = [];
 let prodottoFiltro = [];
 let rowReference = document.getElementsByClassName('row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4')[0];
@@ -36,7 +38,7 @@ const creaProdotto = (prodotto) => {
 let eseguiFetch = () => {
     fetch('https://striveschool-api.herokuapp.com/api/product/', {
         headers: {
-            "Authorization": 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDgxN2M1ZWU3ODE4NzAwMTVjMjY3YTgiLCJpYXQiOjE2ODIxNTMwMzEsImV4cCI6MTY4MzM2MjYzMX0.QfrHGNkOSFPjhD4t65_wyQTG95iDLuy3soAJSn9i3G0'
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDQwMmEwNWQ5MTJlOTAwMTRjMjNmYTMiLCJpYXQiOjE2ODQ3NzczNzAsImV4cCI6MTY4NTk4Njk3MH0.RJ1s8NGriAzo8QkETgx1tmmpKudamnNop3ilTgGcIhY" 
         }
     })
         .then(response => {
