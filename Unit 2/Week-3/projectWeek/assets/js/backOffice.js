@@ -272,7 +272,7 @@ const faiFetch = () => {
 const faiFetchCancellazione = () => {
     fetch(`https://striveschool-api.herokuapp.com/api/product/${idProdotto}`, {
         headers: {
-            "Authorization": token
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDQwMmEwNWQ5MTJlOTAwMTRjMjNmYTMiLCJpYXQiOjE2ODQ3NzczNzAsImV4cCI6MTY4NTk4Njk3MH0.RJ1s8NGriAzo8QkETgx1tmmpKudamnNop3ilTgGcIhY"
         },
         method: "DELETE"
     })
